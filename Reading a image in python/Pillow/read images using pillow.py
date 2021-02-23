@@ -8,7 +8,7 @@ Created on Tue Feb 23 19:36:21 2021
 from PIL import Image
 import numpy as np
 # Opening the image
-img=Image.open('m.jpg') 
+img=Image.open('J:\Digital-Image-Processing\Images\m.jpg') 
 
 #Print the type of image.Pillow image is not numpy array.
 print(type(img))
