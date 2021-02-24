@@ -8,6 +8,6 @@ Created on Wed Feb 24 09:18:56 2021
 import czifile
 
 # reading the image
-img=czifile.imread('J:\Digital-Image-Processing\Images\czi_image.czi')
+img=czifile.imread('czi_image.czi')
 print(img.shape)
 print(img)
