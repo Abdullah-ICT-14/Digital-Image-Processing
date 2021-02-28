@@ -31,3 +31,11 @@ plt.imshow(img)
 
 # slicing the pixel value
 print(img[20:30,10:18])
+
+# statistical information
+mean=img.mean()
+max=img.max()
+min=img.min()
+print('Min,Max and Mean :',min,max,mean)
+
+
