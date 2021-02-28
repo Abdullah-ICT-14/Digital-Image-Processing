@@ -59,6 +59,14 @@ rot_img_60=ndimage.rotate(img, 60)
 plt.imshow(rot_img_60)
 
 
+# Blurring/smoothing
+# Guassian filter
+guassian_filter=ndimage.gaussian_filter(img, sigma=3)
+plt.imshow(guassian_filter)
+
+# Uniform filter
+uniform_filter=ndimage.uniform_filter(img)
+plt.imshow(uniform_filter)
 
 
 
