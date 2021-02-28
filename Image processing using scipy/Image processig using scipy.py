@@ -38,4 +38,30 @@ max=img.max()
 min=img.min()
 print('Min,Max and Mean :',min,max,mean)
 
+# Geometrical transformation
+# flip left right
+
+from scipy import ndimage
+import numpy as np
+
+flip=np.fliplr(img)
+plt.imshow(flip)
+
+#flip up down
+flipud=np.flipud(img)
+plt.imshow(flipud)
+
+
+# rotation
+rot_img_45=ndimage.rotate(img, 45)
+plt.imshow(rot_img_45)
+rot_img_60=ndimage.rotate(img, 60)
+plt.imshow(rot_img_60)
+
+
+
+
+
+
+
 
