@@ -9,7 +9,7 @@ from scipy import misc
 import imageio
 
 # Reading the image
-img=imageio.imread('J:\Digital-Image-Processing\Images/data science.jpg')
+img=imageio.imread('J:\Digital-Image-Processing\Images/m.jpg')
 print(img)
 
 # Find the type of the image
@@ -68,6 +68,12 @@ plt.imshow(guassian_filter)
 uniform_filter=ndimage.uniform_filter(img)
 plt.imshow(uniform_filter)
 
+# Median_filter
+Median_filter=ndimage.median_filter(img,7)
+plt.imshow(Median_filter)
+
+sobel_img=ndimage.sobel(img,axis=0)
+plt.imshow(sobel_img)
 
 
 
