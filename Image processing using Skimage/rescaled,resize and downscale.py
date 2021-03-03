@@ -8,7 +8,7 @@ Created on Wed Mar  3 12:37:13 2021
 from skimage import io
 import matplotlib.pyplot as plt
 
-img=io.imread('J:\Digital-Image-Processing\Images/test_image.jpg')
+img=io.imread('J:\Digital-Image-Processing\Images/test_image.jpg',as_gray=True)
 plt.imshow(img)
 
 from skimage.transform import rescale,resize,downscale_local_mean
@@ -22,3 +22,4 @@ plt.imshow(resize_img)
 
 #downscaling
 down_scale_img=downscale_local_mean(img, (4,3))
+plt.imshow(down_scale_img)
