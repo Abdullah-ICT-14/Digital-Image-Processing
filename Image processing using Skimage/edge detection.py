@@ -36,6 +36,7 @@ ax[3].set_title('Prewitt edge detection')
 
 for i in ax:
     i.axis('off')
+    
 plt.tight_layout()
 plt.show()
 
